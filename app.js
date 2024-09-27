@@ -1,62 +1,61 @@
-console.log(`Задание 1`)
+console.log('Задание 1')
 
-let mounth = //prompt(`Введите число от 1 до 12`);
+let user1 = {
+    name:"John",
+    age: 30
+};
 
-mounths = ['январь','февраль','март',' апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь'];
+console.log('age' in user1)
 
-console.log(mounths[mounth - 1]);
 
-console.log(`Задание 2`)
-let dostavka = 350;
 
-let tovar1 = [15000, `Процессор`, dostavka]
-let tovar2 = [25000, `Видеокарта`, dostavka]
-let tovar3 = [5000, `Блок питания`, dostavka]
+console.log('Задание 2')
 
-console.log(tovar1[2]+tovar2[2]+tovar3[2]+tovar1[0]+tovar2[0]+tovar3[0])
+let users = [
+    {
+    name: "John",
+    age: 30
+    },
+    {
+    name: "Anna",
+    age: 19
+    },
+    {
+    name: "Bob",
+    age: 21
+        },
+    ]
+console.log(users[2]);
 
-console.log(`Задание 3`)
 
-let arr = [25, 30, 6, 9, 8]
-console.log(`макс число из массиве [25, 30, 6, 9, 8] равно ${Math.max(...arr)}`)
-console.log(`мин число из массиве [25, 30, 6, 9, 8] равно ${Math.min(...arr)}`)
 
-console.log(`Задание 4`)
+console.log('Задание 3')
+delete users[1];
+console.log(users);
 
-arr = [
-    Math.floor(Math.random()*10),
-    Math.floor(Math.random()*10),
-    Math.floor(Math.random()*10),
-    Math.floor(Math.random()*10),
-    Math.floor(Math.random()*10)
-]
-console.log(arr)
-console.log(arr.sort())
-console.log(arr.sort().reverse())
 
-console.log(`Задание 5`)
-arr = [ "Hi", "Hola", "Bonjour"]
-console.log(arr)
-arr.push('Hola')
-console.log(arr)
 
-console.log(`Задание 6`)
-let a = ['a', 'b', 'c'];
-let b = [1, 2, 3];
-console.log(`Массив a = ${a}`)
-console.log(`Массив a = ${b}`)
+console.log('Задание 4')
+let sort = users.sort((b,c)=> b.age - c.age);
+console.log(sort)
 
-console.log(`Задание 7`)
 
-arr = [1, 2, 3]
-console.log(arr)
-console.log(arr.revers)
 
-console.log(`Задание 8`)
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits.includes('Banana'))
+console.log('Задание 5')
+const obj = {
+    id: 5,
+    token: 12343423
+};
+const { id } = obj;
+console.log(id);
 
-console.log(`Задание 9`)
-const array = [2, 5, 9];
-console.log(array)
 
+
+
+console.log('Задание 6')
+const obj1 = {
+    id: 5,
+    token: 12343423
+};
+const { id: userId } = obj;
+console.log(userId);
